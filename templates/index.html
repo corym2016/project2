@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="{{ url_for('static', filename='index.js') }}"></script>
+        <title>Vote</title>
+    </head>
+    <body>
+        <div>
+          <form action="{{ url_for('open') }}" method="post">
+            <button type="btn primary-btn" value="login" name="creds">Sign In</button>
+            <button value="register" name="creds">Register</button>
+          </form>
+        </div>
+    </body>
+</html>
